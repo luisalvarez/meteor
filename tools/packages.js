@@ -1483,7 +1483,7 @@ _.extend(Package.prototype, {
           // standard client packages for the classic meteor stack.
           // XXX remove and make everyone explicitly declare all dependencies
           ['meteor', 'webapp', 'logging', 'routepolicy', 'deps', 'session',
-           'livedata', 'mongo-livedata', 'spark', 'templating', 'startup',
+           'livedata', 'mongo-livedata', 'ui', 'templating', 'startup',
            'past', 'check'],
         project.get_packages(appDir));
 
