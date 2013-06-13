@@ -72,7 +72,8 @@ Component = function (args) {
     // this way?
     _.each(UI._templates, function (v, k) {
       if (UI.isComponentClass(global[k])) {
-        if (k.prototype.hasOwnProperty('render'))
+        if (k.prototype.hasOwnProperty('render') &&
+            k.prototype.render !== v)
           throw new Error(
             'Component "' + k + '" has both a render method ' +
               'implementation and a template of that name');
